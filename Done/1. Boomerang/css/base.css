@@ -1,0 +1,374 @@
+body{
+
+    font-family: 'Arial';
+    padding: 0;
+    margin: 0;
+    background-color: rgb(194, 240, 192);
+
+}
+
+#mySection{
+
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.subSection{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#infoSection{
+
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+/* -- Selection Section --*/
+
+#selectionSection{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#selectionSection > div > p {
+
+    margin: 0;
+
+}
+
+#selections{
+
+    border: 3px solid black;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 260px;
+    padding: 4px 0px;
+
+}
+
+/* -- CSS */
+
+#myCSS{
+
+    width: 300px;
+    height: 300px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#placeholder{
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+
+}
+
+#cssTitle{
+
+    left:0%;
+    top: -100%;
+    font-size: 20px;
+    position: relative;
+    text-align: left;
+
+}
+
+#placeholder > div {
+
+    position: absolute;
+
+}
+
+#boomerangBase{
+
+    position: absolute;
+
+}
+
+#boomerangBase > div{
+
+    position: absolute;
+    background-color: burlywood;
+
+}
+
+#boomerangBase > div:nth-of-type(2){
+
+    left: 135px;
+    width: 15px;
+    height: 75px;
+    top: 150px;
+    box-shadow: 3px 2px 5px rgba(0,0,0,0.35);
+
+}
+
+#boomerangBase > div:nth-of-type(1){
+
+    left: 130px;
+    width: 15px;
+    height: 75px;
+    top: 165px;
+    transform-origin: 100% 0%;
+    transform: rotate(100deg);
+    box-shadow: -3px -2px 5px rgba(0,0,0,0.35);
+
+}
+
+#boomerangStripes{
+
+    position: absolute;
+
+}
+
+#boomerangStripes > div{
+
+    position: absolute;
+    width: 15px;
+    height: 4px;
+    top: 150px;
+    left: 135px;
+
+}
+
+#boomerangStripes > div:nth-of-type(1){
+
+    background-color: firebrick;
+    transform: translate(0px,60px);
+
+}
+
+#boomerangStripes > div:nth-of-type(2){
+
+    background-color: yellow;
+    transform: translate(0px,67px);
+
+}
+
+#boomerangStripes > div:nth-of-type(3){
+
+    background-color: firebrick;
+    transform: rotate(95deg) translate(0px,57px);
+
+}
+
+#boomerangStripes > div:nth-of-type(4){
+
+    background-color: yellow;
+    transform: rotate(96deg) translate(0px,64px);
+
+}
+
+/* -- SVG -*/
+
+#mySVG{
+
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+
+}
+
+/* -- Canvas */
+
+#myCanvas{
+
+    width: 300px;
+    height: 300px;
+
+}
+
+/* -- p5 */
+
+#p5Section{
+
+    width: 100%;
+
+}
+
+#myP5{
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+/* footer / sig */
+
+#footer{
+
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    height: 50px;
+    background-color: rgb(28, 68, 143);
+    box-sizing: border-box;
+    border-top: 3px solid rgb(56, 3, 56);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(56, 3, 56);
+    font-weight: bold;
+
+}
+
+#footerContainer{
+
+    width: auto;
+    height: 100%;
+    display: flex;
+
+}
+
+#profilePic{
+
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+}
+
+#theImg{
+
+    top: calc(50% - 14px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+    border: 1px solid rgb(56, 3, 56);
+    box-sizing: border-box;
+
+}
+
+#sig{
+
+    font-size: 13px;
+    letter-spacing: 0.75px;
+    top: calc(50% - 15px);
+    margin-top: 3px;
+
+}
+
+#sig > p > a{
+
+    color: rgb(56, 3, 56);
+    text-decoration: none;
+
+}
+
+#slImg{
+
+    top: calc(50% - 15px);
+    position: relative;
+    border-radius: 50%;
+    max-width: 30px;
+    border: 1px solid rgb(56, 3, 56);
+
+}
+
+#cpenImg{
+
+    top: calc(50% - 15px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+
+}
+
+/* footer / sig */
+
+#footer{
+
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    height: 50px;
+    background-color: #2C67D3;
+    box-sizing: border-box;
+    border-top: 3px solid #D32C67;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D32C67;
+    font-weight: bold;
+
+}
+
+#footerContainer{
+
+    width: auto;
+    height: 100%;
+    display: flex;
+
+}
+
+#profilePic{
+
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+}
+
+#theImg{
+
+    top: calc(50% - 14px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+    border: 1px solid #D32C67;
+    box-sizing: border-box;
+
+}
+
+#sig{
+
+    font-size: 13px;
+    letter-spacing: 0.75px;
+    top: calc(50% - 15px);
+    margin-top: 3px;
+
+}
+
+#sig > p > a{
+
+    color: #D32C67;
+    text-decoration: none;
+
+}
+
+#slImg{
+
+    top: calc(50% - 15px);
+    position: relative;
+    border-radius: 50%;
+    max-width: 30px;
+    border: 1px solid #D32C67;
+
+}
+
+#cpenImg{
+
+    top: calc(50% - 15px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+
+}

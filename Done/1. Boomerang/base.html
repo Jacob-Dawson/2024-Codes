@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.min.js" integrity="sha512-jLPBEs8Tcpbj4AlLISWG0l7MbuIqp1cFBilrsy0BhvNUa0BLB4wVQeoL+93OYOdENFPKLOgrzb1Nytn+5N5y7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="css/base.css">
+        <title>Boomerang 🪃</title>
+    </head>
+    <body>
+        <section id="mySection">
+            <div id="infoSection" class="subSection">
+                <!-- Information about the drawing -->
+                <h1>The Boomerang 🪃</h1>
+                <p>The Boomerang was used for hunting by Australian Aboriginals during the pre-colonisation period in Australia. They would usually swing around at an angle which would make them usually hit and animal or return to the thrower.</p>
+                <p>Click on the various boomerangs below to watch them spin.</p>
+            </div>
+            <div id="selectionSection" class="subSection">
+                <!-- Select which drawing you want to see -->
+                <div>
+                    <p>Select which drawings you want to see</p><br>
+                </div>
+                <div id="selections">
+                    <label for="cssCheck">CSS</label>
+                    <input type="checkbox" id="cssCheck" checked/>
+                    <label for="svgCheck">SVG</label>
+                    <input type="checkbox" id="svgCheck" checked/>
+                    <label for="canvasCheck">Canvas</label>
+                    <input type="checkbox" id="canvasCheck" checked/>
+                    <label for="p5Check">p5</label>
+                    <input type="checkbox" id="p5Check" checked/>
+                </div>
+            </div>
+            <div id="cssSection" class="subSection">
+                <!-- The CSS Section -->
+                <div id="myCSS">
+                    <div id="placeholder">
+                        <div id="boomerangBase">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div id="boomerangStripes">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="svgSection" class="subSection">
+                <!-- The SVG Section-->
+                <svg id="mySVG" width="300" height="300">
+                    <g id="mainSVG" transform="translate(150,150)">
+                        <!-- Base -->
+                        <path fill="burlywood" d="M0,0 L0,75 L-15,75 L-15,15 L-73,5 L-73,-12 Z" stroke="black"/>
+                        <!-- Stripes -->
+                        <rect x="-15" y="60" width="15" height="4" fill="firebrick"/>
+                        <rect x="-15" y="67" width="15" height="4" fill="yellow"/>
+                        <g transform="rotate(88,0,2)">
+                            <rect x="-15" y="67" width="15" height="4" fill="yellow" />
+                            <rect x="-15" y="60" width="15" height="4" fill="firebrick" transform="rotate(-1,0,0)"/>
+                        </g>
+                        <animateTransform id="svgAni1" attributeName="transform" type="rotate" values="0,0,0;900,300,-100;0,0,0" additive="sum" dur="3s" begin="indefinite"/>
+                        <animateTransform id="svgAni2" attributeName="transform" type="translate" values="0,0;300,-100;0,0" additive="sum" dur="3s" begin="indefinite"/>                          
+                    </g>
+                </svg>
+            </div>
+            <div id="canvasSection" class="subSection">
+                <!-- The Canvas Section -->
+                <canvas id="myCanvas" width="600" height="600">
+                    HTML5 Canvas is not supported in your browser / device.
+                </canvas>
+            </div>
+            <div id="p5Section" class="subSection">
+                <!-- The p5 Section -->
+                <div id="myP5">
+
+                </div>
+            </div>
+        </section>
+        <div id="footer">
+            <div id="footerContainer">
+                <div id="profilePic">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="theImg" src="https://blob.sololearn.com/avatars/4f502f80-c497-49f5-be5b-3ee1f3be0739.jpg"/></a>
+                </div>
+                <div id="sig">
+                    <p><a href="https://www.sololearn.com/Profile/100073">Jay</a> &copy; 1/12 (2024). Follow me:&nbsp;</p>
+                </div>
+                <div id="logos">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="slImg" src="https://blob.sololearn.com/avatars/sololearn.png"/></a>
+                    <a href="https://codepen.io/JDawson"><img id="cpenImg" src="https://res.cloudinary.com/css-tricks/images/w_600,h_600,c_fill/f_auto,q_auto/v1637703540/Button-White-Large/Button-White-Large-png?_i=AA"/></a>
+                </div>
+            </div>
+        </div>
+        <script src="js/base.js"></script>
+    </body>
+</html>
