@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <title>Champagne 🍾</title>
+    </head>
+    <body>
+        <section id="mySection">
+            <svg id="mySVG" width="300" height="300">
+                <g transform="translate(150,110) rotate(0)">
+                    <!-- Cork -->
+                    <g transform="translate(0,-50)">
+                        <path d="M10,0 l0,10 l-3,0 l0,20 l-14,0 l0,-20 l-3,0 l0,-10 Z" fill="burlywood" stroke-linejoin="round" stroke="black"/>
+                        <path d="M10,0 l0,10 l-3,0 l0,20 l-14,0 l0,-20 l-3,0 l0,-10 Z" fill="url(#circles)" stroke-linejoin="round" stroke="black"/>
+                        <pattern id="circles" viewBox="0,0,8,8" width="10%" height="10%">
+                            <circle cx="2" cy="6" r="1.5" fill="black"/>
+                            <circle cx="6" cy="2" r="1.5" fill="black"/>
+                        </pattern>
+                        <animateTransform id="corkPop" attributeName="transform" type="translate" begin="0s" dur="5s" values="0 0;0 0;0 -10;0 -150;0 -150" keyTimes="0;0.1;0.24;0.3;1" repeatCount="indefinite"/>
+                    </g>
+
+                    <!-- Bubbles / Froth -->
+                     <g transform="translate(0,0)" fill="rgba(230,180,0,0.4)">
+                        <!-- right side -->
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0s" path="M0,20 c0,-100 20,-40 20,-40" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0.25s" path="M0,20 c0,-100 20,-40 22,-40" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0.5s" path="M0,20 c0,-100 20,-40 18,-40" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0.75s" path="M0,20 c0,-100 20,-40 25,-40" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+1s" path="M0,20 c0,-100 20,-40 15,-40" repeatCount="indefinite">
+                        </circle>
+                        <!-- right alt -50 -->
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0s" path="M0,20 c0,-100 20,-50 20,-50" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0.25s" path="M0,20 c0,-100 20,-50 22,-50" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0.5s" path="M0,20 c0,-100 20,-50 18,-50" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0.75s" path="M0,20 c0,-100 20,-50 25,-50" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+1s" path="M0,20 c0,-100 20,-50 15,-50" repeatCount="indefinite">
+                        </circle>
+                        <!-- right alt -60 -->
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0s" path="M0,20 c0,-100 20,-60 20,-60" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0.25s" path="M0,20 c0,-100 20,-60 22,-60" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0.5s" path="M0,20 c0,-100 20,-60 18,-60" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0.75s" path="M0,20 c0,-100 20,-60 25,-60" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+1s" path="M0,20 c0,-100 20,-60 15,-60" repeatCount="indefinite">
+                        </circle>
+                        <!-- left side -->
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0s" path="M0,20 c0,-100 -20,-40 -20,-40" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0.25s" path="M0,20 c0,-100 -20,-40 -22,-40" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0.5s" path="M0,20 c0,-100 -20,-40 -18,-40" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0.75s" path="M0,20 c0,-100 -20,-40 -25,-40" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+1s" path="M0,20 c0,-100 -20,-40 -15,-40" repeatCount="indefinite">
+                        </circle>
+                        <!-- left alt -50 -->
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0s" path="M0,20 c0,-100 -20,-50 -20,-50" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0.25s" path="M0,20 c0,-100 -20,-50 -22,-50" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0.5s" path="M0,20 c0,-100 -20,-50 -18,-50" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0.75s" path="M0,20 c0,-100 -20,-50 -25,-50" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+1s" path="M0,20 c0,-100 -20,-50 -15,-50" repeatCount="indefinite">
+                        </circle>
+                        <!-- left alt -60 -->
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0s" path="M0,20 c0,-100 -20,-60 -20,-60" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0.25s" path="M0,20 c0,-100 -20,-60 -22,-60" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0.5s" path="M0,20 c0,-100 -20,-60 -18,-60" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+0.75s" path="M0,20 c0,-100 -20,-60 -25,-60" repeatCount="indefinite">
+                        </circle>
+                        <circle cx="0" cy="20" r="5" stroke="none">
+                            <animateMotion dur="5s" begin="corkPop.begin+1s" path="M0,20 c0,-100 -20,-60 -15,-60" repeatCount="indefinite">
+                        </circle>
+                     </g>
+                    
+                    <!-- Champ Body -->
+                    <g id="champBody" transform="translate(0,10)">
+                        <path d="M10,0 l-1,0 l0,11 l1,0 l0,9 l5,20 l15,50 l0,70 l-60,0 l0,-70 l15,-50 l5,-20 l0,-9 l1,0 l0-11 l-1,0 Z" fill="green" stroke-linejoin="round" stroke="black"/>
+                        <path d="M10,0 l0,3 l-20,0 l0,-3 Z" fill="green" stroke-linejoin="round" stroke="black"/>
+                        <path d="M10,8 l0,3 l-20,0 l0,-3 Z" fill="green" stroke-linejoin="round" stroke="black"/>
+                    </g>
+                    <!-- Top Wrapper -->
+                    <g transform="translate(0,30)">
+                        <path d="M10,0 l5,20 l7.5,25 l-45,0 l7.5,-25 l5,-20 Z" fill="gold"/>
+                        <path d="M15,0 l7.5,25 l-22.5,10 l-22.5,-10 l7.5,-25 Z" transform="translate(0,20)" fill="black" stroke="silver" stroke-width="1"/>
+                        <path d="M15,0 l7.5,25 m-45,0 l7.5,-25" transform="translate(0,20)" fill="none" stroke="black" stroke-width="1"/>
+                    </g>
+                    <!-- Label -->
+                    <g transform="translate(0,135)">
+                        <path d="M25,0 l0,25 l-50,0 l0,-25 Z" fill="gold" stroke="silver" stroke-width="2"/>
+                    </g>
+                </g>
+            </svg>
+        </section>
+        <div id="footer">
+            <div id="footerContainer">
+                <div id="profilePic">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="theImg" src="https://blob.sololearn.com/avatars/4f502f80-c497-49f5-be5b-3ee1f3be0739.jpg"/></a>
+                </div>
+                <div id="sig">
+                    <p><a href="https://www.sololearn.com/Profile/100073">Jay</a> &copy; 2/12 (2024). Follow me:&nbsp;</p>
+                </div>
+                <div id="logos">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="slImg" src="https://blob.sololearn.com/avatars/sololearn.png"/></a>
+                    <a href="https://codepen.io/JDawson"><img id="cpenImg" src="https://res.cloudinary.com/css-tricks/images/w_600,h_600,c_fill/f_auto,q_auto/v1637703540/Button-White-Large/Button-White-Large-png?_i=AA"/></a>
+                </div>
+            </div>
+        </div>
+        <script src="js/base.js"></script>
+    </body>
+</html>
